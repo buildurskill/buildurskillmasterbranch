@@ -30,6 +30,11 @@ public class InstituteController {
         return "forward:/index.html";
     }
 	
+	@GetMapping("/admin")
+    public String adminPage() {
+        return "forward:/admin.html";
+    }
+	
 	@PostMapping("/studentinformation")
 	public String saveStudentDetails(@RequestParam String studentName, @RequestParam String studentPhone, @RequestParam String studentEmail, @RequestParam String studentCourse,
 			@RequestParam String studentsDefineWell, @RequestParam String studentsLookingForDemo) {
