@@ -1,14 +1,26 @@
 # Use an official OpenJDK runtime as a parent image
-FROM openjdk:17-jdk-slim
+FROM maven:3.8.6-eclipse-temurin-17 AS build
 
-# Set the working directory inside the container
+# Set the working directory
 WORKDIR /app
 
-# Copy the built JAR file to the container
-COPY target/*.jar app.jar
+# Copy project files to the container
+COPY . .
+
+# Build the application inside the container
+RUN mvn clean package -DskipTests
+
+# Use a minimal Java image for running the app
+FROM eclipse-temurin:17-jre
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy only the generated JAR file
+COPY --from=build /app/target/*.jar app.jar
 
 # Expose the application port
 EXPOSE 8080
 
-# Run the JAR file when the container starts
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the application
+CMD ["java", "-jar", "app.jar"]
