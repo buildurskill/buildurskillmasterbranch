@@ -186,7 +186,7 @@ function registerNow() {
         studentsLookingForDemo : studentsLookingForDemo
     });
 
-    fetch("https://testsite-ax7e.onrender.com/api/institute/studentinformation", {
+    fetch("https://buildurskilltest.onrender.com/api/institute/studentinformation", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -234,7 +234,7 @@ function registerNowAdminPage(){
         studentsLookingForDemo : lookingForDemo
     });
 
-    fetch("https://testsite-ax7e.onrender.com/api/institute/studentinformation", {
+    fetch("https://buildurskilltest.onrender.com/api/institute/studentinformation", {
         mode: 'no-cors',
         method: "POST",
         headers: {
