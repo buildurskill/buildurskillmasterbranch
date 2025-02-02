@@ -1,6 +1,6 @@
 function leadDetails() {
     // Fetch data from the backend
-    fetch('https://skilbuild.shop/api/institute/getleads')
+    fetch('https://buildurskill.com/api/institute/getleads')
         .then(response => response.json())
         .then(data => {
             // Get the container for the lead table
@@ -64,7 +64,7 @@ function leadDetails() {
                 });
 
                 // Send updates to the backend
-                fetch('https://skilbuild.shop/api/institute/updateLeadDetails', {
+                fetch('https://buildurskill.com/api/institute/updateLeadDetails', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ function leadDetails() {
 	CONVERSION DETAILS
 */
 function conversionDetails() {
-    fetch('https://skilbuild.shop/api/institute/getleads')
+    fetch('https://buildurskill.com/api/institute/getleads')
         .then(response => response.json())
         .then(data => {
             const tableContainer = document.querySelector(".Conversion-container");
@@ -180,7 +180,7 @@ function conversionDetails() {
 function saveConversionDetails(updatedData) {
     console.log("Updated Data for Saving:", updatedData);
 
-    fetch('https://skilbuild.shop/api/institute/updateAllConversionDetails', {
+    fetch('https://buildurskill.com/api/institute/updateAllConversionDetails', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -204,7 +204,7 @@ function saveConversionDetails(updatedData) {
 */
 function ourstudentsDetails() {
     // Fetch data from the backend
-    fetch('https://skilbuild.shop/api/institute/getleads')
+    fetch('https://buildurskill.com/api/institute/getleads')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch leads');
@@ -389,7 +389,7 @@ function saveAllStudentDetails() {
     }
 
     // Send the array of updated student details to the backend
-    fetch('https://skilbuild.shop/api/institute/updateOurStudentsDetails', {
+    fetch('https://buildurskill.com/api/institute/updateOurStudentsDetails', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
