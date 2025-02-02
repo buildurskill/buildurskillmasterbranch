@@ -1853,6 +1853,10 @@
 	    padding: 15px;
 	/*     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 	}
+	
+	#contacts{
+		display:none !important;
+	}
 }
 
 
@@ -2784,9 +2788,14 @@
 	    padding: 15px;
 	/*     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 	}
+	
+	#contacts{
+		display:none !important;
+	}
+	
 }
 
-/* IPHONE 15 - 390 VIEW */
+/* IPHONE 12 Pro - 390 VIEW */
 
 /* Enforce desktop style for all devices */
 @media (max-width: 390px) {
@@ -3713,6 +3722,10 @@
 	    background: #f8f8f8; */
 	    padding: 15px;
 	/*     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+	}
+	
+	#contacts{
+		display:none !important;
 	}
 }
 
