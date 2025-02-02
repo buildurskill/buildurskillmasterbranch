@@ -45,7 +45,7 @@
 	  text-align: center;
 	  cursor: pointer;
 	  transition: all 0.3s ease;
-	  width: 95px !important;
+	  width: 100px !important;
 	}
 	
 	/* .call-button:hover {
@@ -924,6 +924,10 @@
 	    padding: 15px;
 	/*     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 	}
+	
+	#contacts{
+		display:block !important;
+	}
 }
 
 /* IPONE 14 PRO MAX*/
@@ -974,7 +978,7 @@
 	  text-align: center;
 	  cursor: pointer;
 	  transition: all 0.3s ease;
-	  width: 95px !important;
+	  width: 100px !important;
 	}
 	
 	/* .call-button:hover {
@@ -1909,7 +1913,7 @@
 	  text-align: center;
 	  cursor: pointer;
 	  transition: all 0.3s ease;
-	  width: 95px !important;
+	  width: 100px !important;
 	}
 	
 	/* .call-button:hover {
@@ -2844,7 +2848,7 @@
 	  text-align: center;
 	  cursor: pointer;
 	  transition: all 0.3s ease;
-	  width: 95px !important;
+	  width: 100px !important;
 	}
 	
 	/* .call-button:hover {
