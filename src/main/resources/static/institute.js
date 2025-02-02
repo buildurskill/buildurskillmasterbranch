@@ -279,3 +279,42 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function updateDropdownText() {
+  if (window.innerWidth <= 430) {
+    document.querySelector('#defining option.default-option').textContent = 'What Define you?';
+    document.querySelector('#lookingForDemo option.default-option').textContent = 'Looking for Demo?';
+  } else {
+    document.querySelector('#defining option.default-option').textContent = 'What Defines you well?';
+    document.querySelector('#lookingForDemo option.default-option').textContent = 'Looking for a Demo?';
+  }
+}
+
+document.getElementById('Phoneno').addEventListener('input', function (e) {
+  this.value = this.value.replace(/[^0-9]/g, ''); // Allow only numbers
+});
+
+document.getElementById('contact').addEventListener('input', function (e) {
+  this.value = this.value.replace(/[^0-9]/g, ''); // Allow only numbers
+});
+
+
+function updatePlaceholderText() {
+  if (window.innerWidth <= 430) {
+    document.getElementById('Name').placeholder = 'Name';
+    document.getElementById('Phoneno').placeholder = 'Phone Number';
+    document.getElementById('Email').placeholder = 'Email Address';
+  } else {
+    document.getElementById('Name').placeholder = 'Your name';
+    document.getElementById('Phoneno').placeholder = 'Your phone number';
+    document.getElementById('Email').placeholder = 'Your email address';
+  }
+}
+
+// Run when the page loads and window resize
+window.addEventListener('DOMContentLoaded', updatePlaceholderText);
+window.addEventListener('resize', updatePlaceholderText);
+
+
+// Run on page load and window resize
+window.addEventListener('load', updateDropdownText);
+window.addEventListener('resize', updateDropdownText);

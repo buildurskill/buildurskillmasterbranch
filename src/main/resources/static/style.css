@@ -136,9 +136,10 @@
 	
 	#hidden{
 	    font-family: "Roboto", serif;
-	    font-weight: 400;
+	    font-weight: 500 !important;
 	    font-style: normal;
 	    text-align: center !important;
+		color: #FFA500 !important;
 	}
     
     #requestacall{
@@ -263,7 +264,7 @@
       /* Image styling with zoom effect */
       #assurepng {
           width: 330px !important;
-          transform: scale(1) !important;
+          transform: scale(1.1) !important;
           transition: transform 0.3s ease;
       }
 
@@ -1047,20 +1048,21 @@
 	    font-weight: 500;
 	    font-style: normal;
 	    font-size: 50px;
-	    width: 430px !important;
+	    width: 430px;
 	    margin-bottom: 1% !important;
 		text-align: center !important;
 	}
 	
 	#hidden{
 	    font-family: "Roboto", serif;
-	    font-weight: 400;
+	    font-weight: 500;
 	    font-style: normal;
 	    text-align: center !important;
+	    color: #FFA500 !important;
 	}
     
     #requestacall{
-	    padding: 3%;font-size: 20px;background-color: #FFA500;border-radius: 5px;color: white;border: 0px;cursor: pointer;margin-left: 19%;
+	    padding: 3%;font-size: 20px;background-color: #FFA500;border-radius: 5px;color: white;border: 0px;cursor: pointer;margin-left: 24%;
 	}
 
 	#assure{
@@ -1077,7 +1079,8 @@
 		display: none !important;
 	}
     #grouppic{
-    	display: block !important;
+    	display: flex !important;
+   		justify-content: center;
     	width: 100%;
     	padding-left: 0%;
     	margin-bottom: 15%;
@@ -1181,7 +1184,7 @@
       /* Image styling with zoom effect */
       #assurepng {
           width: 330px !important;
-          transform: scale(1) !important;
+          transform: scale(1.1) !important;
           transition: transform 0.3s ease;
       }
 
@@ -1279,7 +1282,7 @@
 	}
 	
 	#weekendregister1{
-	    margin-top: 12%;
+	    margin-top: 8%;
 	}
 	
 	#weekendregister2{
@@ -1974,9 +1977,10 @@
 	
 	#hidden{
 	    font-family: "Roboto", serif;
-	    font-weight: 400;
+	    font-weight: 500;
 	    font-style: normal;
 	    text-align: center !important;
+	    color: #FFA500 !important;
 	}
     
     #requestacall{
@@ -2102,7 +2106,7 @@
       /* Image styling with zoom effect */
       #assurepng {
           width: 330px !important;
-          transform: scale(1) !important;
+          transform: scale(1.1) !important;
           transition: transform 0.3s ease;
       }
 
