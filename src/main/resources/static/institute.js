@@ -1,53 +1,3 @@
-// const portfolioData = [
-//     {
-//         name: "Lavanya",
-//         role: "UXUI Designer",
-//         company: "@TCS",
-//         profileImage: "images/Lavanya.png",
-//         portfolioImage: "images/COVER 1 1.png",
-//         portfolioLink: "https://www.behance.net/gallery/214528417/FLOW-TASK",
-//     },
-//     {
-//         name: "John Doe",
-//         role: "Web Developer",
-//         company: "@Google",
-//         profileImage: "images/Lavanya.png",
-//         portfolioImage: "images/COVER 1 1.png",
-//         portfolioLink: "https://www.behance.net/gallery/214528417/FLOW-TASK",
-//     },
-//     {
-//         name: "Jane Smith",
-//         role: "Graphic Designer",
-//         company: "@Meta",
-//         profileImage: "images/Lavanya.png",
-//         portfolioImage: "images/COVER 1 1.png",
-//         portfolioLink: "https://www.behance.net/gallery/214528417/FLOW-TASK",
-//     },
-// ];
-
-// // Current index to track which student is displayed
-// let currentIndex = 0;
-
-// function swipe(direction) {
-//     // Update the index based on the direction
-//     if (direction === "right") {
-//         currentIndex = (currentIndex + 1) % portfolioData.length; // Cycle forward
-//     } else if (direction === "left") {
-//         currentIndex = (currentIndex - 1 + portfolioData.length) % portfolioData.length; // Cycle backward
-//     }
-
-//     // Get the current portfolio data
-//     const currentPortfolio = portfolioData[currentIndex];
-
-//     // Update the DOM with the new content
-//     document.querySelector("#studentsimage img").src = currentPortfolio.profileImage;
-//     document.querySelector(".student-name").innerText = currentPortfolio.name;
-//     document.querySelector("#studentsimage span:nth-of-type(1)").innerText = currentPortfolio.role;
-//     document.querySelector("#studentsimage span:nth-of-type(2)").innerText = currentPortfolio.company;
-//     document.querySelector("#studentsportfolio img").src = currentPortfolio.portfolioImage;
-//     document.querySelector("#studentsportfolio a").href = currentPortfolio.portfolioLink;
-// }
-
 // For Faq's
 function toggleFaq(header) {
     const faqItem = header.parentElement;
@@ -221,7 +171,7 @@ function registerNowAdminPage(){
     var lookingForDemo = document.getElementById("lookingForDemo").options[document.getElementById("lookingForDemo").selectedIndex].text;
 
     if (!name || !phone || !email || selectedCourse === "Select Course") {
-        alert("Please fill in all the fields.");
+        alert("Please fill in all the fields."+name+"--"+phone+"--"+email+"--"+selectedCourse);
          return;
     }
 
