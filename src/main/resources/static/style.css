@@ -21,7 +21,7 @@
     	display: flex; justify-content: space-between; align-items: center; padding: 10px;font-size: 20px;padding-left: 7%;font-family: 'Open Sans', sans-serif;
     }
     #brandname{
-    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;
+    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;color:#FFA500;
     }
     #heading{
     	list-style-type: none; display: flex; gap: 20px !important;padding: 0;align-items: center;font-size: 0; 
@@ -954,7 +954,7 @@
     	display: flex; justify-content: space-between; align-items: center; padding: 10px;font-size: 20px;padding-left: 7%;font-family: 'Open Sans', sans-serif;
     }
     #brandname{
-    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;
+    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;color:#FFA500;
     }
     #heading{
     	list-style-type: none; display: flex; gap: 20px !important;padding: 0;align-items: center;font-size: 0; 
@@ -1889,7 +1889,7 @@
     	display: flex; justify-content: space-between; align-items: center; padding: 10px;font-size: 20px;padding-left: 7%;font-family: 'Open Sans', sans-serif;
     }
     #brandname{
-    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;
+    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;color:#FFA500;
     }
     #heading{
     	list-style-type: none; display: flex; gap: 20px !important;padding: 0;align-items: center;font-size: 0; 
@@ -2824,7 +2824,7 @@
     	display: flex; justify-content: space-between; align-items: center; padding: 10px;font-size: 20px;padding-left: 7%;font-family: 'Open Sans', sans-serif;
     }
     #brandname{
-    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;
+    	list-style-type: none; display: flex; gap: 20px;font-weight: 700;color:#FFA500;
     }
     #heading{
     	list-style-type: none; display: flex; gap: 20px !important;padding: 0;align-items: center;font-size: 0; 
