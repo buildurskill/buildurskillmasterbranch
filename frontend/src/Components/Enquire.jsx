@@ -3,7 +3,7 @@ import Vector from '../assets/Vector 9.png';
 import RightArrow from '../assets/right-arrow.png';
 import axios from 'axios';
 
-const Enquire = () => {
+const Enquire = ({ onSuccess }) => {
   const [formData, setFormData] = useState({
     studentName: '',
     studentEmail: '',
@@ -27,7 +27,7 @@ const Enquire = () => {
         params: formData,
       });
       console.log('Response:', response.data);
-      alert('Submitted successfully!');
+      if (onSuccess) onSuccess();
     } catch (error) {
       console.error('Submission failed:', error);
       alert('Error submitting form');
@@ -52,18 +52,26 @@ const Enquire = () => {
           onChange={handleChange}
           className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans"
         />
-        <select
-          name="studentCourse"
-          value={formData.studentCourse}
-          onChange={handleChange}
-          className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans"
-        >
-          <option value="">Select Course</option>
-          <option value="UI/UX Design Course">UI/UX Design Course</option>
-          <option value="AWS Course">AWS Course</option>
-          <option value="SEO Course">SEO Course</option>
-          <option value="Digital Marketing Course">Digital Marketing Course</option>
-        </select>
+        <div className="relative w-full">
+  <select
+    name="studentCourse"
+    value={formData.studentCourse}
+    onChange={handleChange}
+    className="appearance-none border border-gray-400 rounded px-4 py-2 w-full font-sans bg-white placeholder:font-sans"
+  >
+    <option value="">Select Course</option>
+    <option value="UI/UX Design Course">UI/UX Design Course</option>
+    <option value="AWS Course">AWS Course</option>
+    <option value="SEO Course">SEO Course</option>
+    <option value="Digital Marketing Course">Digital Marketing Course</option>
+  </select>
+  <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
+    <svg className="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+      <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
+    </svg>
+  </div>
+</div>
+
       </section>
 
 

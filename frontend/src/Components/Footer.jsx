@@ -31,13 +31,24 @@ const Footer = ({onRegisterClick}) => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 text-center">
-            <div className="flex items-center gap-2">
-              <Phone size={16} /> <span>+91-9940257003</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail size={16} /> <span>teambuildurskill@gmail.com</span>
-            </div>
-          </div>
+  {/* Phone Link */}
+  <a
+    href="tel:+919940257003"
+    className="flex items-center gap-2 text-blue-600 hover:underline"
+  >
+    <Phone size={16} />
+    <span>+91-9940257003</span>
+  </a>
+
+  {/* Email Link */}
+  <a
+    href="mailto:teambuildurskill@gmail.com"
+    className="flex items-center gap-2 text-blue-600 hover:underline"
+  >
+    <Mail size={16} />
+    <span>teambuildurskill@gmail.com</span>
+  </a>
+</div>
         </div>
 
         <div className="text-center text-black font-semibold mt-4 text-xs sm:text-sm">

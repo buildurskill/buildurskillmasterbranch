@@ -8,6 +8,7 @@ import Assurance from "./Assurance";
 import Footer from "./Footer";
 import Faqicon from "./Faqicon";
 import RegistrationPage from "./RegistrationPage";
+import SuccessPage from "./SuccessPage";        
 
 export{
     Maindiv,
@@ -19,5 +20,6 @@ export{
     Assurance,
     Footer,
     Faqicon,
-    RegistrationPage
+    RegistrationPage,
+    SuccessPage
 }

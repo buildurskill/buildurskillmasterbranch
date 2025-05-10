@@ -9,7 +9,9 @@ import {
   OurStudentsWork,
   UpcomingBatches,
   Faqicon,
-  RegistrationPage
+  RegistrationPage,
+  SuccessPage
+
 } from "./Components";
 
 import Nav from './Section/Nav';
@@ -17,6 +19,7 @@ import FadeInSection from './Components/FadeInSection';
 
 const App = () => {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
   return (
     <main id="outercontainer">
@@ -32,7 +35,7 @@ const App = () => {
 
       <section id="enquire" >
         <FadeInSection>
-          <Enquire />
+          <Enquire onSuccess={() => { setIsRegisterOpen(false); setIsSuccessOpen(true); }} />
         </FadeInSection>
       </section>
 
@@ -79,7 +82,12 @@ const App = () => {
       </section>
 
       {/* Sliding Registration Page */}
-      <RegistrationPage isOpen={isRegisterOpen} onClose={() => setIsRegisterOpen(false)} />
+      <RegistrationPage isOpen={isRegisterOpen} onClose={() => setIsRegisterOpen(false)} onSuccess={() => { setIsRegisterOpen(false); setIsSuccessOpen(true); }} />
+      {/* Success Page */}
+      {isSuccessOpen && <SuccessPage onClose={() => setIsSuccessOpen(false)} />}
+
+      {/* Optional: If you want to keep the success page open */}
+      {/* <SuccessPage isOpen={isSuccessOpen} onClose={() => setIsSuccessOpen(false)} /> */}
     </main>
   );
 };

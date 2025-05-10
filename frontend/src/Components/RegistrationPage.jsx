@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Ensure this is installed: npm install axios
+import axios from 'axios';
 
-const RegistrationPage = ({ isOpen, onClose }) => {
+const RegistrationPage = ({ isOpen, onClose, onSuccess }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,9 +27,9 @@ const RegistrationPage = ({ isOpen, onClose }) => {
           studentsLookingForDemo: formData.lookingForDemo
         }
       });
-      alert('Successfully submitted!');
+
       console.log(response.data);
-      onClose(); // Close modal on success
+      onSuccess(); // Show success page
     } catch (error) {
       console.error('Submission error:', error);
       alert('Something went wrong.');
@@ -46,7 +46,9 @@ const RegistrationPage = ({ isOpen, onClose }) => {
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-3xl font-bold text-gray-600 hover:text-black transition"
-        >×</button>
+        >
+          ×
+        </button>
 
         <div className="mt-12 flex flex-col items-center">
           <h2 className="text-3xl font-bold text-center">Connect with our Admission Team</h2>
@@ -82,11 +84,9 @@ const RegistrationPage = ({ isOpen, onClose }) => {
             >
               <option value="">Select Course</option>
               <option value="Fullstack">UI/UX Design Course</option>
-              <option value="Data Science">AWS Course</option>
-              <option value="Data Science">SEO  Course</option>
-              <option value="Data Science">Digital Marketing Course</option>
-
-              {/* Add more options */}
+              <option value="AWS">AWS Course</option>
+              <option value="SEO">SEO Course</option>
+              <option value="Digital Marketing">Digital Marketing Course</option>
             </select>
             <select
               name="definesYou"
@@ -97,7 +97,6 @@ const RegistrationPage = ({ isOpen, onClose }) => {
               <option value="">What Defines you well?</option>
               <option value="Student">Student</option>
               <option value="Working Professional">Working Professional</option>
-              {/* Add more options */}
             </select>
             <select
               name="lookingForDemo"
