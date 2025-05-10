@@ -27,7 +27,7 @@ public class InstituteController {
 	
 	@GetMapping("/")
     public String loadDefaultPage() {
-        return "forward:/main.html";
+        return "forward:/index.html";
     }
 	
 	@PostMapping("/studentinformation")
