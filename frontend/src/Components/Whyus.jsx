@@ -2,12 +2,13 @@ import React from 'react';
 
 import Vector from '../assets/Vector 9.png';
 import whyusImage from '../assets/whyus.png'; 
+import GroupIcon from '../assets/Group 1000004135.png';
 
 const Whyus = ({ onRegisterClick }) => {
   return (
     <div>
       <section className='flex justify-center items-center mt-28'>
-        <img src="/src/assets/Group 1000004135.png" alt="" />
+        <img src={GroupIcon} alt="" />
       </section>
 
       <section className="relative flex flex-col items-center mt-8">
