@@ -40,39 +40,42 @@ const Enquire = ({ onSuccess }) => {
       <img src={Vector} alt="" className='md:pl-[60%] pl-[20%]'/>
 
       <section className="flex flex-col mt-10 sm:flex-row sm:justify-between gap-4 mb-6">
-        <input type="text" name="studentName" placeholder="Enter Your Name" onChange={handleChange} className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans" />
-        <input type="text" name="studentEmail" placeholder="Enter Your Email" onChange={handleChange} className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans" />
+        <input type="text" name="studentName" placeholder="Enter Your Name" onChange={handleChange} className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans focus:outline-none focus:ring-0" />
+        <input type="text" name="studentEmail" placeholder="Enter Your Email" onChange={handleChange} className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans focus:outline-none focus:ring-0" />
       </section>
 
       <section className="flex flex-col sm:flex-row sm:justify-between gap-4 mb-6">
-        <input
-          type="text"
-          name="studentPhone"
-          placeholder="Enter Your Phone"
-          onChange={handleChange}
-          className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans"
-        />
-        <div className="relative w-full">
-  <select
-    name="studentCourse"
-    value={formData.studentCourse}
-    onChange={handleChange}
-    className="appearance-none border border-gray-400 rounded px-4 py-2 w-full font-sans bg-white placeholder:font-sans"
-  >
-    <option value="">Select Course</option>
-    <option value="UI/UX Design Course">UI/UX Design Course</option>
-    <option value="AWS Course">AWS Course</option>
-    <option value="SEO Course">SEO Course</option>
-    <option value="Digital Marketing Course">Digital Marketing Course</option>
-  </select>
-  <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
-    <svg className="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
-      <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
-    </svg>
+  <div className="w-full">
+    <input
+      type="text"
+      name="studentPhone"
+      placeholder="Enter Your Phone"
+      onChange={handleChange}
+      className="border border-gray-400 rounded px-4 py-2 w-full font-sans placeholder:font-sans focus:outline-none focus:ring-0"
+    />
   </div>
-</div>
+  
+  <div className="relative w-full">
+    <select
+      name="studentCourse"
+      value={formData.studentCourse}
+      onChange={handleChange}
+      className="appearance-none border border-gray-400 rounded px-4 py-2 w-full font-sans bg-white placeholder:font-sans focus:outline-none focus:ring-0"
+    >
+      <option value="">Select Course</option>
+      <option value="UI/UX Design Course">UI/UX Design Course</option>
+      <option value="AWS Course">AWS Course</option>
+      <option value="SEO Course">SEO Course</option>
+      <option value="Digital Marketing Course">Digital Marketing Course</option>
+    </select>
+    <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
+      <svg className="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
+      </svg>
+    </div>
+  </div>
+</section>
 
-      </section>
 
 
       <section className="flex justify-center">

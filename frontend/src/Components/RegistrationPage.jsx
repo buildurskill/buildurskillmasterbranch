@@ -36,6 +36,8 @@ const RegistrationPage = ({ isOpen, onClose, onSuccess }) => {
     }
   };
 
+  const inputClasses = "border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans appearance-none w-full";
+
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full bg-white z-50 transform transition-transform duration-300 ease-in-out ${
@@ -57,57 +59,84 @@ const RegistrationPage = ({ isOpen, onClose, onSuccess }) => {
           <form className="mt-8 w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
             <input
               name="name"
-              className="border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans"
+              className={inputClasses}
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
             />
             <input
               name="email"
-              className="border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans"
+              className={inputClasses}
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
             />
             <input
               name="phone"
-              className="border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans"
+              className={inputClasses}
               placeholder="Contact number"
               value={formData.phone}
               onChange={handleChange}
             />
-            <select
-              name="course"
-              className="border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans"
-              value={formData.course}
-              onChange={handleChange}
-            >
-              <option value="">Select Course</option>
-              <option value="Fullstack">UI/UX Design Course</option>
-              <option value="AWS">AWS Course</option>
-              <option value="SEO">SEO Course</option>
-              <option value="Digital Marketing">Digital Marketing Course</option>
-            </select>
-            <select
-              name="definesYou"
-              className="border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans"
-              value={formData.definesYou}
-              onChange={handleChange}
-            >
-              <option value="">What Defines you well?</option>
-              <option value="Student">Student</option>
-              <option value="Working Professional">Working Professional</option>
-            </select>
-            <select
-              name="lookingForDemo"
-              className="border-b border-gray-500 p-3 outline-none font-sans placeholder:font-sans"
-              value={formData.lookingForDemo}
-              onChange={handleChange}
-            >
-              <option value="">Looking for a Demo?</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
+
+            {/* Dropdown: Course */}
+            <div className="relative w-full">
+              <select
+                name="course"
+                className={inputClasses}
+                value={formData.course}
+                onChange={handleChange}
+              >
+                <option value="">Select Course</option>
+                <option value="Fullstack">UI/UX Design Course</option>
+                <option value="AWS">AWS Course</option>
+                <option value="SEO">SEO Course</option>
+                <option value="Digital Marketing">Digital Marketing Course</option>
+              </select>
+              <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Dropdown: Defines You */}
+            <div className="relative w-full">
+              <select
+                name="definesYou"
+                className={inputClasses}
+                value={formData.definesYou}
+                onChange={handleChange}
+              >
+                <option value="">What Defines you well?</option>
+                <option value="Student">Student</option>
+                <option value="Working Professional">Working Professional</option>
+              </select>
+              <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Dropdown: Looking for Demo */}
+            <div className="relative w-full">
+              <select
+                name="lookingForDemo"
+                className={inputClasses}
+                value={formData.lookingForDemo}
+                onChange={handleChange}
+              >
+                <option value="">Looking for a Demo?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+              <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5.25 7.5L10 12.25L14.75 7.5H5.25Z" />
+                </svg>
+              </div>
+            </div>
           </form>
 
           <div className="mt-10">
