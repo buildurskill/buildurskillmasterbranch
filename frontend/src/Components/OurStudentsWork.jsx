@@ -1,11 +1,10 @@
 import React from 'react';
 
 import Vector from '../assets/Vector 9.png';
-import Lavanya from '../assets/Lavanya.png';
-import PortFolio1 from '../assets/portfolio1.png';
-import PortFolio2 from '../assets/PortFolio2.png';
-import PortFolio3 from '../assets/PortFolio3.png';
-import LinkedIn from '../assets/linkedin.png';
+import PortFolio1 from '../assets/COVER.png';
+import PortFolio2 from '../assets/Wealthy Main page.png';
+import PortFolio3 from '../assets/Landing page.png';
+import PortFolio4 from '../assets/Gum Thumbnail 1.png';
 import StudentsWorkIcon from '../assets/StudentsWorkIcon.png';
 
 
@@ -19,10 +18,10 @@ const OurStudentsWork = () => {
       {/* Heading */}
       <section >
         <h1 className="flex justify-center text-3xl font-bold mt-10">
-            Our Students Work
+            PortFolio's
         </h1>
         
-        <img src={Vector} alt="" className='pl-[40%] w-[88%] md:pl-[50%] md:w-[59%] sm:pl-[50%] sm:w-[68%]'/>
+        <img src={Vector} alt="" className='pl-[40%] w-[70%] md:pl-[47%] md:w-[55%] sm:pl-[50%] sm:w-[68%]'/>
       </section>
 
       {/* Scrollable full-screen slider */}
@@ -35,63 +34,90 @@ const OurStudentsWork = () => {
         {/* Card 1 */}
           <div className="flex flex-col justify-center md:flex-row w-screen flex-shrink-0 snap-start px-6">
             {/* Profile Section */}
-            <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
+            
+            {/* <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
               <img src={Lavanya} alt="student" className="rounded-lg w-full max-w-xs" />
-              <p className="font-bold mt-2">Nisha</p>
+              <p className="font-bold mt-2">Hema</p>
               <p>UI/UX Designer</p>
-              <p><span className="font-bold">Place :</span> TCS</p>
-              <a href="#" className="text-[#006DD9] flex items-center gap-1 mt-2">
-                <img src={LinkedIn} alt="LinkedIn" className="w-5 h-5" />
-                <span>View Profile</span>
+              <p><span className="font-bold">Place :</span> TCS</p> }
+              <a href="#" className="flex items-center mt-2 w-10">
+                <img src={BehanceLogo} alt="Behance" className="w-5 h-5 object-contain" />
+                <span className="text-[#006DD9] text-sm font-medium ml-2 whitespace-nowrap">View Profile</span>
               </a>
-            </section>
+            </section> */}
 
             {/* Project Section */}
             <section className="flex items-center justify-center max-h-[max-content]">
-              <img src={PortFolio2} alt="project" className="rounded-lg w-full max-w-2xl" />
+              <a href="https://www.behance.net/gallery/208353929/WealthyWAY-Case-Study">
+                <img src={PortFolio2} alt="project" className="rounded-lg w-full max-w-2xl" />
+              </a>
             </section>
           </div>
 
 
           {/* Card 2 */}
           <div className="flex flex-col justify-center md:flex-row w-screen flex-shrink-0 snap-start px-6">
-            <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
+            {/* Profile Section */}
+            {/* <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
               <img src={Lavanya} alt="student" className="rounded-lg w-full max-w-xs" />
               <p className="font-bold mt-2">Nisha</p>
               <p>UI/UX Designer</p>
-              <p><span className="font-bold">Place :</span> TCS</p>
-              <a href="#" className="text-[#006DD9] flex items-center gap-1 mt-2">
-                <img src="/src/assets/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
-                <span>View Profile</span>
+              {<p><span className="font-bold">Place :</span> TCS</p>}
+              <a href="#" className="flex items-center mt-2 w-10">
+                <img src={BehanceLogo} alt="Behance" className="w-5 h-5 object-contain" />
+                <span className="text-[#006DD9] text-sm font-medium ml-2 whitespace-nowrap">View Profile</span>
+              </a>
+            </section> */}
+
+            {/* Project Section */}
+            <section className="flex items-center justify-center max-h-[max-content]">
+              <a href="https://www.behance.net/gallery/208912981/Fitwave-Case-Study">
+                <img src={PortFolio4} alt="project" className="rounded-lg w-full max-w-2xl" />
               </a>
             </section>
-            <section className="flex items-center justify-center max-h-[max-content]">
-              <img src={PortFolio1} alt="project" className="rounded-lg w-full max-w-2xl" />
-            </section>
           </div>
-          
-
-          
 
         {/* Card 3 */}
         <div className="flex flex-col justify-center md:flex-row w-screen flex-shrink-0 snap-start px-6">
             {/* Profile Section */}
-            <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
+            {/* <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
               <img src={Lavanya} alt="student" className="rounded-lg w-full max-w-xs" />
               <p className="font-bold mt-2">Nisha</p>
               <p>UI/UX Designer</p>
-              <p><span className="font-bold">Place :</span> TCS</p>
-              <a href="#" className="text-[#006DD9] flex items-center gap-1 mt-2">
-                <img src={LinkedIn} alt="LinkedIn" className="w-5 h-5" />
-                <span>View Profile</span>
+              {<p><span className="font-bold">Place :</span> TCS</p>}
+              <a href="#" className="flex items-center mt-2 w-10">
+                <img src={BehanceLogo} alt="Behance" className="w-5 h-5 object-contain" />
+                <span className="text-[#006DD9] text-sm font-medium ml-2 whitespace-nowrap">View Profile</span>
               </a>
-            </section>
+            </section> */}
 
             {/* Project Section */}
             <section className="flex items-center justify-center max-h-[max-content]">
-              <img src={PortFolio3} alt="project" className="rounded-lg w-full max-w-2xl" />
+              <a href="https://www.behance.net/gallery/205616563/Pawsitive">
+              <img src={PortFolio3} alt="project" className="rounded-lg w-full max-w-2xl" /></a>
             </section>
           </div>
+
+          {/* Card 4 */}
+          <div className="flex flex-col justify-center md:flex-row w-screen flex-shrink-0 snap-start px-6">
+            {/* <section className="hidden md:flex min-w-[250px] flex-col items-start justify-center max-h-[max-content]">
+              <img src={Lavanya} alt="student" className="rounded-lg w-full max-w-xs" />
+              <p className="font-bold mt-2">Nisha</p>
+              <p>UI/UX Designer</p>
+              {<p><span className="font-bold">Place :</span> TCS</p>}
+              <a href="#" className="flex items-center mt-2 w-10">
+                <img src={BehanceLogo} alt="Behance" className="w-5 h-5 object-contain" />
+                <span className="text-[#006DD9] text-sm font-medium ml-2 whitespace-nowrap">View Profile</span>
+              </a>
+            </section> */}
+
+            <section className="flex items-center justify-center max-h-[max-content]">
+              <a href="https://www.behance.net/gallery/214528417/FLOW-TASK">
+                <img src={PortFolio1} alt="project" className="rounded-lg w-full max-w-2xl" />
+              </a>
+            </section>
+          </div>
+
         </div>
       </div>
     </div>

@@ -24,9 +24,9 @@ const Footer = ({onRegisterClick}) => {
         <div className="mt-16 flex flex-col md:flex-row justify-between items-center text-sm border-t border-black pt-6 gap-4">
           <div className="flex flex-wrap justify-center gap-4 text-center">
             <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">Gallery</a>
+            {/* <a href="#" className="hover:underline">Gallery</a> */}
             <a href="#" className="hover:underline">Students Work</a>
-            <a href="#" className="hover:underline">About</a>
+            {/* <a href="#" className="hover:underline">About</a> */}
             <a href="#" className="hover:underline">Contact</a>
           </div>
 
