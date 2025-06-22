@@ -35,7 +35,7 @@ const UpcomingBatches = ({onRegisterClick}) => {
             <section className="bg-[#fff8e6] p-6 rounded-b-[5px] shadow-md">
               <div className="flex items-center gap-4 text-xl sm:text-2xl font-bold justify-center">
                 <img src={Calendar} alt="Calendar" className="w-8 h-8" />
-                May Batch
+                June Batch
               </div>
 
               <div className="pt-6 text-[#555] text-sm sm:text-base text-center">
